@@ -1,0 +1,500 @@
+:root {
+    --primary: #0f172a;     
+    --accent: #38bdf8;       
+    --glass: rgba(15, 23, 42, 0.6); 
+    --text-light: #f1f5f9;   
+    --text-dark: #334155;    
+    --bg-white: #ffffff;
+    --bg-gray: #f8fafc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-gray);
+    color: var(--text-dark);
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 5%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.2); 
+    backdrop-filter: blur(15px);     
+    -webkit-backdrop-filter: blur(15px); 
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    color: var(--text-light);
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    height: 35px;
+    width: auto;
+    object-fit: contain;
+}
+
+nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    margin-left: 2.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    transition: 0.3s;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+nav a:hover, nav a.active {
+    color: var(--accent);
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--accent);
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--text-light);
+    padding: 0 20px;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('img/antisnaimagen.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero h1 {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.hero h1 .highlight {
+    color: transparent;
+    -webkit-text-stroke: 2px var(--accent);
+    display: block;
+    font-size: 4.5rem;
+    margin-top: 0.5rem;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.hero .subtitle {
+    font-size: 1.3rem;
+    color: var(--text-light);
+    opacity: 0.9;
+    max-width: 700px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.stats-resumen {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin: 3rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px 0 20px; 
+}
+
+.seccion-blanca { 
+    background: transparent; 
+}
+
+.seccion-gris { 
+    background: var(--bg-gray); 
+}
+
+
+.grid-2-col {
+    display: flex;
+    flex-direction: row;
+
+    gap: 40px; 
+
+    align-items: flex-start; 
+    
+    justify-content: space-between;
+    width: 100%;
+}
+
+.texto-intro {
+    flex: 1; 
+    min-width: 300px;
+}
+
+.imagen-intro {
+    flex: 1;
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    gap: 150px; 
+}
+*/
+.img-destacada {
+    width: 100%;
+    max-width: 500px; 
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+
+    margin-bottom: 20px; 
+}
+
+
+.img-destacada {
+    width: 100%; 
+    max-width: 500px;
+    height: auto; 
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+
+.img-secundaria {
+    width: 100%;
+    max-width: 450px; 
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    
+
+    margin-right: 20px; 
+}
+
+.img-destacada {
+    width: 100%; 
+    max-width: 500px;
+    height: auto; 
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+
+.step-item {
+    margin-bottom: 60px; 
+}
+
+.step-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.step-number {
+    background-color: #004d40;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.step-header h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #000;
+}
+
+
+.step-item p {
+    margin-left: 50px; 
+    color: #555;
+    line-height: 1.6;
+}
+
+.obj-separado {
+    margin-bottom: 25px; 
+    margin-left: 50px;   
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Botón Dataset */
+.btn-dataset {
+    display: inline-block;
+    background-color: #4c6ef5;
+    color: white;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.btn-dataset:hover {
+    background-color: #364fc7;
+}
+
+.vista { display: none; animation: fadeIn 0.5s ease-in-out; }
+.vista.active { display: block; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+.cabecera-seccion {
+    background: var(--primary);
+    color: var(--text-light);
+    padding: 120px 20px 60px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .grid-2-col {
+        flex-direction: column; 
+        text-align: center;
+        gap: 40px; 
+    }
+    
+    .texto-intro { order: 1; }
+    .imagen-intro { order: 2; justify-content: center; width: 100%; }
+    .step-item { text-align: left; }
+    .hero h1 { font-size: 2.5rem; }
+    .hero h1 .highlight { font-size: 3rem; }
+}
+
+.seccion-mapa {
+    width: 100%; 
+    background-color: #f1f5f9;
+    padding: 100px 20px; 
+    margin-top: 50px;    
+
+    box-sizing: border-box; 
+}
+
+.grid-mapa {
+
+    max-width: 1200px; 
+    margin: 0 auto;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+}
+
+.titulo-mapa {
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5rem; 
+    font-weight: 900; 
+    text-transform: uppercase; 
+    line-height: 1;
+    margin-bottom: 20px;
+
+    color: transparent; 
+    -webkit-text-stroke: 3px #38bdf8; 
+    
+    letter-spacing: -2px; 
+}
+
+@media (max-width: 768px) {
+    .titulo-mapa {
+        font-size: 3rem;
+        -webkit-text-stroke: 2px #38bdf8;
+    }
+}
+.contenido-mapa p {
+    font-size: 1.1rem;
+    color: var(--text-dark); 
+    margin-bottom: 30px;
+}
+
+.btn-mapa {
+    display: inline-block;
+    background-color: #00bcd4;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: 0 10px 20px rgba(0, 188, 212, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-mapa:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(0, 188, 212, 0.5);
+}
+
+.contenedor-img-mapa {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end !important; 
+}
+
+.img-mapa-borde {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    border: 15px solid white; 
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1); 
+}
+
+@media (max-width: 768px) {
+    .seccion-mapa {
+        padding: 60px 20px;
+    }
+    
+    .grid-mapa {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+    
+    .titulo-mapa {
+        font-size: 2.8rem;
+    }
+}
+/* =========================================
+   SECCIÓN MAPA INTERACTIVO (QGIS)
+   ========================================= */
+
+.seccion-mapa-interactivo {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: white; /* Fondo blanco para limpiar la vista */
+}
+
+/* Encabezado del mapa */
+.cabecera-interactivo h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #0f172a; /* Azul oscuro */
+    font-weight: 800;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cabecera-interactivo p {
+    font-size: 1.1rem;
+    color: #64748b;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* El Marco del Iframe */
+.marco-mapa {
+    position: relative; /* Para poder poner botones flotantes encima */
+    width: 100%;
+    max-width: 1200px; /* Que no se estire infinito en pantallas gigantes */
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden; /* Recorta las esquinas del iframe */
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15); /* Sombra potente */
+    border: 1px solid #e2e8f0; /* Borde sutil */
+}
+
+/* Ajustes del Iframe */
+.marco-mapa iframe {
+    display: block; /* Quita el espacio blanco fantasma de abajo */
+    width: 100%;
+    height: 600px; /* Altura fija para escritorio */
+    background-color: #eee; /* Color mientras carga */
+}
+
+/* Botones flotantes (Decoración estilo GIS) */
+.controles-mapa {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-control {
+    width: 40px;
+    height: 40px;
+    background: white;
+    border: none;
+    border-radius: 8px;
+    color: #333;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-control:hover {
+    background-color: #f1f5f9;
+    color: #00bcd4;
+}
+
+@media (max-width: 768px) {
+    .cabecera-interactivo h2 {
+        font-size: 1.8rem;
+    }
+    
+    .marco-mapa iframe {
+        height: 400px; 
+    }
+}
